@@ -8,7 +8,7 @@ This repository is for examples to learn how to train a language model with Hugg
 - AMI: Deep Learning AMI (Ubuntu 18.04) Version 59.0
 - Volume Size: > 2TB
 
-### Requirements
+### [WIP]Requirements
 
 Follow the [guide](https://github.com/huggingface/transformers/tree/main/examples/flax) for setup to install JAX on GPUs.
 - Python >=3.8
