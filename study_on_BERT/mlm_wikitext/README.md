@@ -1,5 +1,5 @@
 # BERT Pre Training on C4 Japanese
-## requirements.txt
+## Requirements
 - sagemaker>=2.48.0
 
 ## Run the training script on SageMaker training jos
