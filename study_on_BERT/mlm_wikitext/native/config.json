@@ -10,6 +10,7 @@
         "per_device_eval_batch_size": 8,
         "do_train": true,
         "do_eval": true,
+        "num_train_epochs" : 10,
         "output_dir": "/opt/ml/model"
     },
     "mpi_options": {
