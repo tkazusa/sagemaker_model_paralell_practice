@@ -25,7 +25,7 @@ if __name__ == "__main__":
     # instance configurations
     instance_type = "ml.p3.16xlarge"
     instance_count = 1
-    volume_size = 1024
+    volume_size = 200
 
     with open("config.json") as f:
         config = json.loads(f.read())
@@ -43,8 +43,8 @@ if __name__ == "__main__":
         metrics_definition=metric_definitions,
         instance_type=instance_type,
         instance_count=instance_count,
-        subnets=['subnet-0f222c541877a0c8e'],
-        security_group_ids=['sg-0b5de522e9feff31f'],
+        subnets=['xxxxxxxxxxxxxx'],
+        security_group_ids=['xxxxxxxxxxxxxx'],
         volume_size=volume_size,
         role=role,
         transformers_version="4.17",
@@ -60,7 +60,6 @@ if __name__ == "__main__":
                                         directory_path=directory_path,
                                         file_system_access_mode='ro')
 
-
     # print(huggingface_estimator.hyperparameters())
     # starting the train job with our uploaded datasets as input
-    huggingface_estimator.fit(file_system_input)
+    huggingface_estimator.fit({"training": file_system_input})
